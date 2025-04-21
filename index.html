@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/maniks/rupee-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mani Plantation</title>
+    <link rel="manifest" href="/maniks/manifest.json">
+    <meta name="theme-color" content="#3182ce">
+    <meta name="description" content="A financial transaction tracking application for Mani Plantation">
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful');
+            })
+            .catch(err => {
+              console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+      }
+    </script>
+    <script type="module" crossorigin src="/maniks/assets/index-CNwCO-Lk.js"></script>
+    <link rel="stylesheet" crossorigin href="/maniks/assets/index-DbVLIo1H.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
